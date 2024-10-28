@@ -2,26 +2,28 @@
 using namespace std;
 
 // Function to perform addition
-void add(int a, int b) {
-    int result = a + b;
-    cout << "The sum is " << result << endl;
+int add(int a, int b) {
+    return a + b;
 }
 
 // Function to perform subtraction
-void subtract(int a, int b) {
-    int result = a - b;
-    cout << "The difference between " << a << " and " << b << " is: " << result << endl;
+int subtract(int a, int b) {
+    return a - b;
 }
 
 int main() {
-  int a = 10 ;
-  int b = 5 ;
+    int a = 10;
+    int b = 5;
 
-  int expectedAdd = 55;
-	int expectedDiff = 35;
+    int expectedAdd = 15;   // Correct expected sum of 10 and 5
+    int expectedDiff = 5;   // Correct expected difference of 10 and 5
 
-	if(expectedAdd==add(a, b) && expectedDiff==subtract(a, b))
-	{
-		cout<<"SUCCESSFULLY"<<'\n';
-	}
+    // Compare the expected values with the actual function results
+    if (expectedAdd == add(a, b) && expectedDiff == subtract(a, b)) {
+        cout << "SUCCESSFULLY" << '\n';
+    } else {
+        cout << "TEST FAILED" << '\n';
+    }
+
+    return 0;
 }
