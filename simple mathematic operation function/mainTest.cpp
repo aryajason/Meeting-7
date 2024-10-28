@@ -14,8 +14,8 @@ void subtract(int a, int b) {
 }
 
 int main() {
-  int a = 10
-  int b = 5
+  int a = 10 ;
+  int b = 5 ;
 
   double expectedAdd = 55;
 	double expectedDiff = 35;
@@ -24,3 +24,4 @@ int main() {
 	{
 		cout<<"SUCCESSFULLY"<<'\n';
 	}
+}
