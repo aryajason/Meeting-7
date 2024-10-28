@@ -17,8 +17,8 @@ int main() {
   int a = 10 ;
   int b = 5 ;
 
-  void expectedAdd = 55;
-	void expectedDiff = 35;
+  int expectedAdd = 55;
+	int expectedDiff = 35;
 
 	if(expectedAdd==add(a, b) && expectedDiff==subtract(a, b))
 	{
