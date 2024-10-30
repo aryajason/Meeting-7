@@ -14,7 +14,7 @@ int main() {
 
     int expOutput = 120;
 
-	if(expOutput==factorial(x)) cout<<"SUCCESSFULLY"<<'\n';
+	if(expOutput==factorial(num)) cout<<"SUCCESSFULLY"<<'\n';
 	else cout<<"FAILED!!!"<<'\n';
 
     return 0;
